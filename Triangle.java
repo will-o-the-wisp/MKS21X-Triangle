@@ -12,7 +12,7 @@ public class Triangle {
     v3 = new Point(x3,y3);
   }
   public double getPerimeter(){
-    return distance(v1,v2)+distance(v2,v3)+distance(v3,v1);
+    return Point.distance(v1,v2)+Point.distance(v2,v3)+Point.distance(v3,v1);
   }
   public Point getVertex(int index){
    Point ans;
@@ -39,6 +39,6 @@ public class Triangle {
     }
   }
   public String toString(){
-    return "Triangle: " + v1.toString() + " " + v2.toString() + " " + v3.toString();
+    return "Triangle: A" + v1.toString() + " B" + v2.toString() + " C" + v3.toString();
   }
 }
